@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .focus-ring {
+    outline: 0;
+    box-shadow:
+      0 0 0 0.1rem #000,
+      0 0 0 0.2rem #fff;
+  }
+}
+
+:focus-visible {
+  outline: 0;
+  box-shadow:
+    0 0 0 0.1rem #000,
+    0 0 0 0.2rem #fff;
+}

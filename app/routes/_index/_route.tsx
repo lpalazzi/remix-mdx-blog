@@ -1,6 +1,6 @@
-import { blogPostService } from '~/data/blog'
 import { Route } from './+types/_route'
-import { MaxWidth } from '~/components'
+import { blogPostService } from '~/services/blog.server'
+import { MaxWidth } from '~/components/page-ui'
 import { BlogPostCard } from './BlogPostCard'
 
 export async function loader() {

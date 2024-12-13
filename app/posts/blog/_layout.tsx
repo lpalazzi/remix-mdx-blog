@@ -2,6 +2,7 @@ import { Link, Outlet, data } from 'react-router'
 import { MDXProvider } from '@mdx-js/react'
 
 import { Route } from './+types/_layout'
+import { blogPostService } from '~/services/blog.server'
 import {
   ArticleP,
   ArticleH1,
@@ -9,8 +10,7 @@ import {
   ArticleUL,
   ArticleLI,
 } from '~/components/article-ui'
-import { MaxWidth } from '~/components'
-import { blogPostService } from '~/data/blog'
+import { MaxWidth } from '~/components/page-ui'
 
 export function loader({ params }: Route.LoaderArgs) {
   const slug = params['*']

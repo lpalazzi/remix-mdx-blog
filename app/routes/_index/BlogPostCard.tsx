@@ -1,8 +1,9 @@
 import { Link } from 'react-router'
+import { PostMeta } from '~/utils/basePostService'
 import { BlogPostFrontmatter } from '~/data/blog'
 
 export const BlogPostCard: React.FC<{
-  meta: { slug: string; frontmatter: BlogPostFrontmatter }
+  meta: PostMeta<BlogPostFrontmatter>
 }> = ({ meta }) => {
   const { frontmatter, slug } = meta
   return (

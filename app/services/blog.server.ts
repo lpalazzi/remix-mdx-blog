@@ -1,4 +1,4 @@
-import { BasePostService } from '~/utils/postServer'
+import { BasePostService } from '~/utils/basePostService'
 
 export type BlogPostFrontmatter = {
   title: string

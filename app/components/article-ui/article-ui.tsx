@@ -1,5 +1,3 @@
-import React from 'react'
-
 export const ArticleH1: React.FC<React.HTMLAttributes<HTMLHeadingElement>> = ({
   className = '',
   ...props

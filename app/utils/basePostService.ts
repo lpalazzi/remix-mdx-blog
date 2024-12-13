@@ -2,7 +2,7 @@ interface BasePostServiceParams {
   path: string
 }
 
-type PostMeta<Frontmatter> = {
+export type PostMeta<Frontmatter> = {
   slug: string
   frontmatter: Frontmatter
 }
